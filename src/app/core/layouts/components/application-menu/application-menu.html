@@ -1,0 +1,52 @@
+<!--
+<mat-toolbar id="menutoolbar" class="navtoolbar">
+    <ul>
+      <li><a routerLink="/home" class="list-item">Home</a></li>
+      <li><a routerLink="/homeautomation" class="list-item">Home Automation</a></li>
+      <li><a routerLink="/contact" class="list-item">Contact</a></li>
+      <li><a routerLink="/about" class="list-item">About</a></li>
+    </ul>
+  </mat-toolbar>
+  -->
+
+   @if (buildMenu) { 
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+
+               @for (item of menuItems; track item.navigationItemID) {
+
+              @if (item.children == undefined || item.children.length == 0) {  
+               <!-- Level 1 Nav Item -->
+              <li class="nav-item">
+
+              @if( item.url.indexOf('http:\\') == -1  || item.url.indexOf('https:\\') == -1 ) { 
+
+                <a class="nav-link" routerLink="{{item.url}}">{{ item.text }}</a>
+
+              } @else {
+
+                <a class="nav-link" href="{{item.url}}" target="_blank">{{ item.text }}</a>
+
+              }
+              </li>
+              } @else {
+
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{item.text}}</a>
+                <ul class="dropdown-menu">
+
+                  <app-menu-item [menuItems]="item.children"></app-menu-item>
+
+                </ul>
+                </li>
+            }
+          }
+
+            </ul>
+      </div>
+    </div>
+  </nav>
+}

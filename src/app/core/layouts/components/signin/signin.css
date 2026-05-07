@@ -1,0 +1,95 @@
+/* Sign In/Out Anchor */
+
+a.Header_Sign_In {
+      color: white;
+	    text-decoration:none;
+	    font-weight:normal;
+      font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+      font-size: 1.1em;
+
+}
+
+a.Header_Sign_In:visited
+{
+	 color: white;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+}
+
+a.Header_Sign_In:link 
+{
+	 color: white;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+}
+
+a.Header_Sign_In:hover
+{
+	 color: blue;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+	
+}
+
+a.Header_Sign_In:active
+{
+	 color: #c1b6b6;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+	
+}
+
+a.Header_Sign_Out {
+      color: white;
+	    text-decoration:none;
+	    font-weight:normal;
+      font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+      font-size: 1.1em;
+
+}
+
+a.Header_Sign_Out:visited
+{
+	 color: white;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+}
+
+a.Header_Sign_Out:link 
+{
+	 color: white;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+}
+
+a.Header_Sign_Out:hover
+{
+	 color: blue;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+	
+}
+
+a.Header_Sign_Out:active
+{
+	 color: #c1b6b6;
+	 text-decoration:none;
+	 font-weight:normal;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     font-size: 1.1em;
+	
+}

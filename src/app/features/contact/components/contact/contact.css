@@ -1,0 +1,13 @@
+.contact_email {
+
+    font-weight: bolder;
+    font-size: larger;
+    color: black;
+
+}
+
+.contact_email:hover {
+
+    color:yellow;
+    
+}

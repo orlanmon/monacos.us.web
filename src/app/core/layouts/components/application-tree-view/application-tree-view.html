@@ -1,0 +1,22 @@
+@if(buildTreeView) {
+<mat-tree #tree [dataSource]="dataSource" [childrenAccessor]="childrenAccessor" class="treeview">
+  <!-- This is the tree node template for leaf nodes -->
+  <mat-tree-node *matTreeNodeDef="let node;" matTreeNodePadding class="treeviewitem">
+    <!-- use a disabled button to provide padding for tree leaf -->
+    <a href="{{node.url}}"  target="_new"><img src="images/Sites-icon_16.png">&nbsp;{{node.text}}</a>
+  </mat-tree-node>
+  <!-- This is the tree node template for expandable nodes -->
+  <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding matTreeNodeToggle
+                 [cdkTreeNodeTypeaheadLabel]="node.text" class="treeviewitem">
+    <button matTreeNodeToggle [attr.aria-label]="'Toggle ' + node.text" style="background-color: #212429;">
+      @if(tree.isExpanded(node)) {
+          <img src="images/Folder_Icon_16.png"  style="background-color: #212429;">
+      } @else {
+          <img src="images/Folder_Icon_16.png"  style="background-color: #212429;">
+      }
+    </button>
+    {{node.text}}
+  </mat-tree-node>
+</mat-tree>
+}
+

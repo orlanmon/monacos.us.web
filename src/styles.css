@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif; 
+  background-color:lightgrey;
+}
+
+.toolbar {
+  background-color: black !important;
+  color: white !important;
+}
+
+.navtoolbar {
+  background-color: grey !important;
+  color: white !important;
+  height: 40px;
+  min-height: 40px;
+}
+
+.basic-container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+mat-toolbar a:hover 
+{
+  color: blue;
+}
+
+.list-item {
+  font-size: smaller;
+  text-decoration: none !important;
+  color: black;
+
+}
+
+/* Material Dialog Border Radius */
+
+.mat-mdc-dialog-surface {
+  border-radius: 7px !important;
+}
+
+.card_content {
+    border-style: solid;
+    border-color: black!;
+    border-width: 1px;
+    background-color: #b6b6b6;
+}
+

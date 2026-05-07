@@ -1,0 +1,39 @@
+.treeviewitem a:link {
+     color:#FFFFFF8C;
+     text-decoration: none;
+}
+
+.treeviewitem a:active {
+      color:#FFFFFF8C;
+       text-decoration: none;
+}
+
+.treeviewitem a:hover {
+      
+      color:#FFFFFF;
+       text-decoration: none;
+}
+
+.treeviewitem a:visited {
+
+     color:#FFFFFF8C;
+      text-decoration: none;
+
+}
+
+.treeviewitem {
+    color:#FFFFFF8C;
+     text-decoration: none;
+     font-family: "Segoe UI", "Helvetica Neue", sans-serif; 
+     font-size: 14px;
+}
+
+.treeview {
+    
+    background-color: #212429;
+    color:antiquewhite;
+    margin-left: 5%;
+    border-radius: 10px;
+    padding: 10px;
+
+}
