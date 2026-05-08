@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+    # Create a variable named 'deployment_token' in the pipeline variables UI
+    # and mark it as secret.
+    azure_static_web_apps_api_token: $(deployment_token) 
+
+steps:
+
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: '/'
+    api_location: ""
+    output_location: '/dist/MonacosUsWeb/browser'
+    azure_static_web_apps_api_token: $(azure_static_web_apps_api_token)
+
+
+
